@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 void Multiplos(int arreglo[], int a, int b);
-void Resultados(int arreglo[], int x);
+void Resultados(int arreglo[], int a);
 int main() {
   int t, n;
   cout << "Ingrese el tamano del arreglo: "; cin >> t;
@@ -15,5 +15,10 @@ int main() {
 void Multiplos(int arreglo[], int a, int b) {
   for (int i = 0; i < a; i++) {
     arreglo[i] = b * (i + 1);
+  }
+}
+void Resultados(int arreglo[], int a) {
+  for (int i = 0; i < a; i++) {
+    cout << arreglo[i] << " "<<endl;
   }
 }
