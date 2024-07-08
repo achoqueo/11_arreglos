@@ -14,5 +14,9 @@ int main(){
         } else{
             a=a+A[i];
         }
-    }
+    }Promedio=double(a)/n;
+    Porcentaje=(double(b)/n)*100;
+    cout<<"El promedio es "<<Promedio<<endl;
+    cout<<"El porcentaje de 0 es "<<Porcentaje<<endl;
+    return 0;
 }
