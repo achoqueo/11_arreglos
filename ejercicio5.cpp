@@ -11,5 +11,13 @@ int main(){
     for(int i=1;i<=a;i++){
     cout<<"Ingrese el nombre del estudiante "<<i<<" en la clase de programacion grafica: "; cin>>PG[i];
     }
+    cout<<"Los estudiantes repetidos son:";
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=a;j++){
+            if(FP[i]==PG[j]){
+            cout<<FP[i]<<endl;
+            }
+        }
+    }
 return 0;
 }
