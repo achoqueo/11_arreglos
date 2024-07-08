@@ -10,3 +10,12 @@ int main() {
     int numPar = 0, numImpar = 0;
 
     cout << "Ingrese los numeros: ";
+     for (int i = 0; i < n; ++i) {
+        cin >> arreglo[i];
+        if (arreglo[i] % 2 == 0) {
+            arreglo_par[numPar++] = arreglo[i];
+        } else {
+            arreglo_impar[numImpar++] = arreglo[i];
+        }
+    }
+}
