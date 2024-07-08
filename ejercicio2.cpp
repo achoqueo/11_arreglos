@@ -18,4 +18,17 @@ int main() {
             arreglo_impar[numImpar++] = arreglo[i];
         }
     }
+    cout << "los numeros pares son:"<<endl;
+    for (int i = 0; i < numPar; ++i) {
+        cout << arreglo_par[i] << " "<<endl;
+    }
+
+    cout << "los numeros impares son: "<<endl;
+    for (int i = 0; i < numImpar; ++i) {
+        cout << arreglo_impar[i] << " "<<endl;
+    }
+
+    cout << endl;
+
+    return 0;
 }
