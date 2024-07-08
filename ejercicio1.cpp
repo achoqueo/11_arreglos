@@ -13,5 +13,8 @@ int main(){
 	if(A[i]==0){
 		cc=cc+1;
 	}
- }
+ }cout<<"La sumatoria de los numeros ingresados es "<<s<<endl;
+ float p=(cc/n)*100;
+ cout<<"El porcentaje de valores ceros ingresados es "<<p<<"%"<<endl;
+ return 0;
 }
