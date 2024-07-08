@@ -12,4 +12,16 @@ int main(){
 	for(int i=0; i<7; i++){
 		cout<<"Dia "<<i+1<<": "<<med[i]<<" grados"<<endl;
 	}
+	int dia= tem(min, 7);
+	cout<<"El dia "<<dia+1<<" es la menor temperatura de toda la semana con "<<min[dia]<<" grados"<<endl; 
+
+}
+int tem(float a[], int d){
+	int mindia=0;
+	for(int i=0; i<d; i++){
+		if( a[i] < a[mindia]){
+			mindia=i;
+		}
+	}
+	return mindia;
 }
