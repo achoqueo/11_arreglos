@@ -1,27 +1,14 @@
 #include <iostream>
 using namespace std;
- void numelementos (int arreglo[], int n);
- void numpares(int arreglo[], int& numpar);
- void numimpares(int arreglo[], int& numimpar);
- for (int i = 0; i < n; ++i) {
-        if (arreglo[i] % 2 == 0) {
-            arreglopar[numpar++] = arreglo[i];
-        } else {
-            arregloimpar[numimpar++] = arreglo[i];
-        }
-    }
+void Multiplos(int arreglo[], int a, int b);
+void Resultados(int arreglo[], int x);
 int main() {
- 
-    int n;
-    cout << "Ingrese el numero de elementos: ";
-    cin >> n;
-    int arreglo[MAX];
-    int arreglopar[MAX], arregloimpar[MAX];
-    int numpar, numimpar;
-
-    cout << "Ingrese los elementos: ";
-    for (int i = 0; i < n; ++i) {
-        cin >> arreglo[i];
-    }
-
+  int t, n;
+  cout << "Ingrese el tamano del arreglo: "; cin >> t;
+  cout << "Ingrese el numero requerido: "; cin >> n;
+  int arreglo[t];
+  Multiplos(arreglo, t, n);
+  cout << "El arreglo con multiplos de " << n << " son: \n";
+  Resultados(arreglo, t);
+  return 0;
 }
